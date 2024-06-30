@@ -1,0 +1,96 @@
+<!--create a webpage for feedback form-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>
+             Car Feedback
+        </title>
+    </head>
+    <body>
+        <header><h2>Feedback of Car Performance</h2></header>
+        <section>
+            <article>
+                <form action="feed.html" name="feed" method="post">
+                    <div>
+                        <label><b>First Name:</b></label><br>
+                        <input type="text" name="fname" required>
+                    </div>
+                    <div>
+                        <label><b>Last Name:</b></label><br>
+                        <input type="text" name="mname" required>
+                    </div>
+                    <div>
+                        <label><b>Email id:</b></label><br>
+                        <input type="email" name="email" pattern="[a-za-z0-9]+@[a-z]+\.[a-z]{2,4}" required>
+                    </div>
+                    <div>
+                        <label><b>Mobile Number:</b></label><br>
+                        <input type="text" name="mobile" id="mobile" pattern="[\+][0-9\s]{3}[0-9\s]{5}[0-9]{5}" required>
+                    </div>
+                    <div>
+                        <label><b>External Design of car?</b></label><br>
+                        <input type="radio" name="design" value="excellent">Excellent
+                        <input type="radio" name="design" value="Vgood">Very Good
+                        <input type="radio" name="design" value="good">Good
+                        <input type="radio" name="design" value="Avg">Average
+                        <input type="radio" name="design" value="Poor">Poor
+                        <input type="radio" name="design" value="Vpoor">Very Poor
+                    </div>
+                    <div>
+                        <label><b>Interior of Car?</b></label><br>
+                        <input type="radio" name="design" value="excellent">Excellent
+                        <input type="radio" name="design" value="Vgood">Very Good
+                        <input type="radio" name="design" value="good">Good
+                        <input type="radio" name="design" value="Avg">Average
+                        <input type="radio" name="design" value="Poor">Poor
+                        <input type="radio" name="design" value="Vpoor">Very Poor
+                    </div>
+                    <div>
+                        <label><b>Space and Comfort?</b></label><br>
+                        <input type="radio" name="design" value="excellent">Excellent
+                        <input type="radio" name="design" value="Vgood">Very Good
+                        <input type="radio" name="design" value="good">Good
+                        <input type="radio" name="design" value="Avg">Average
+                        <input type="radio" name="design" value="Poor">Poor
+                        <input type="radio" name="design" value="Vpoor">Very Poor
+                    </div>
+                    <div>
+                        <label><b>Average of Car?</b></label><br>
+                        <input type="radio" name="design" value="excellent">Excellent
+                        <input type="radio" name="design" value="Vgood">Very Good
+                        <input type="radio" name="design" value="good">Good
+                        <input type="radio" name="design" value="Avg">Average
+                        <input type="radio" name="design" value="Poor">Poor
+                        <input type="radio" name="design" value="Vpoor">Very Poor
+                    </div>
+                    <div>
+                        <label><b>Performance of Car?</b></label><br>
+                        <input type="radio" name="design" value="excellent">Excellent
+                        <input type="radio" name="design" value="Vgood">Very Good
+                        <input type="radio" name="design" value="good">Good
+                        <input type="radio" name="design" value="Avg">Average
+                        <input type="radio" name="design" value="Poor">Poor
+                        <input type="radio" name="design" value="Vpoor">Very Poor
+                    </div>
+                    <div>
+                        <label><b>Price and Market value of Car?</b></label><br>
+                        <input type="radio" name="design" value="vh">Very Heigh
+                        <input type="radio" name="design" value="h">Heigh
+                        <input type="radio" name="design" value="Avg">Average
+                        <input type="radio" name="design" value="1">Low
+                        <input type="radio" name="design" value="V1">Very Low
+                    </div>
+                    <div>
+                        <label><b>Comment for Car:</b></label><br>
+                        <textarea rows="5" cols="30" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" value="submit">
+                        <input type="reset" name="reset" value="reset">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </body>
+</html>

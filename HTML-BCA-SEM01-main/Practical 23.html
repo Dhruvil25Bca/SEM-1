@@ -1,0 +1,91 @@
+<!--Create web page for online application in job-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>
+              Online job Registration
+        </title>
+    </head>
+    <body>
+        <header><h2>Apply for Job</h2></header>
+        <section>
+            <article>
+                <form action="jobreg.html" name="jobreg" method="post">
+                    <div><label><b>First Name:</b></label><br>
+                        <input type="text" name="fname" required>
+                    </div>
+                    <div><label><b>Last Name:</b></label><br>
+                    <input type="text" name="mname" required>
+                    </div>
+                    <div>
+                        <label><b>Email ID:</b></label><br>
+                        <input type="email" name="email" id="email" pattern="[a-za-z0-9]+@[a-z]+\.[a-z]{2,4}" required>
+                    </div>
+                    <div>
+                        <label><b>Mobile Number:</b></label><br>
+                        <input type="text" name="mobile" id="mobile" pattern="[\+][0-9\s]{3}[0-9\s][0-9]{5}" required>
+                    </div>
+                    <div>
+                        <label><b>Address:</b></label><br>
+                        <textarea rows="5" cols="30" required></textarea>
+                    </div>
+                    <div>
+                        <label><b>Job Function</b></label><br>
+                        <input list="jobfunction" name="jobfunction" id="jbf" required>
+                        <datalist id="jobfunction">
+                            <option value="A/c and finance"></option>
+                            <option value="Marketing and Sales"></option>
+                            <option value="HR and Office Assistant"></option>
+                            <option value="IT/Hardware/software/telecome"></option>
+                            <option value="Production/Maintenance"></option>
+                            <option value="Agriculture/Farming/dairy"></option>
+                            <option value="Realastate/construction"></option>
+                            <option value="Hotel/Restaurant mgt."></option>
+                            <option value="Legal/law"></option>
+                            <option value="Export/import"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label><b>Experience</b></label><br>
+                        <input type="number" min="0" step="1" required> years
+                        <input type="number" step="1" min="0" max="11" required>Months
+                    </div>
+                    <div>
+                        <label><b>Work Location</b></label><br>
+                        <select name="location" multiple required>
+                            <option value="">Please Select</option>
+                            <optgroup label="Gujarat">Gujarat</optgroup>
+                            <option value="abd">Ahmedabad</option>
+                            <option value="brd">Baroda</option>
+                            <option value="srt">Surat</option>
+                            <option value="rjt">Rajkot</option>
+                            <option value="vvn">V.V Nagar</option>
+                            <optgroup label="Mahrastra">Maharastra</optgroup>
+                            <option value="bom">Mumbai</option>
+                            <option value="pun">Pune</option>
+                            <option value="npr">Nagpur</option>
+                            <option value="nas">Nasik</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label><b>Current Organization</b></label><br>
+                        <input type="text" name="org" required>
+                    </div>
+                    <div>
+                        <label><b>Current Annual Salary</b></label><br>
+                        <input type="tel" name="salary" required placeholder="Rs."><br>
+                    </div>
+                    <div>
+                        <label><b>Upload Resume</b></label><br>
+                        <input type="file" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" value="submit">
+                        <input type="reset" name="reset" value="reset">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Draw two rectangles on the canvas</title>
+<script type="text/javascript" language="javascript">
+    function draw()
+{
+     var can2=document.getElementById("can2");
+     var ctx2=can2.getContext("2d");
+     ctx2.fillRect(0,0,300,100);
+     ctx2.clearRect(50,10,200,80);
+     ctx2.strokeRect(60,20,180,60);
+}
+     
+</script>
+</head>
+<body onload="draw()">
+    <h2> Demo of canvas Tag</h2>
+    <canvas id="can1" width="300px" height="200px" style="border:3px red dashed";></canvas>
+    <canvas id="can2"></canvas>
+</body>
+
+
+</html>

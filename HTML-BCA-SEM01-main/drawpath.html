@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Draw two rectangles on the canvas</title>
+<script type="text/javascript" language="javascript">
+    function draw()
+{
+     var can=document.getElementById("can");
+     var path=can.getContext("2d");
+     path.beginPath();
+     Path.moveTo(0,0);
+     path.lineTo(500,400);
+     Path.stroke();
+     var can2=document.getElementById("can2");
+     var path2=can2.getContext("2d");
+     path2.moveTo(50,0);
+     path2.lineTo(100,50);
+     path2.lineTo(40,50);
+     path2.lineTo(100,0);
+     path2.lineTo(70,50);
+     path2.lineTo(50,0);
+     path2.stroke();
+}
+     
+</script>
+</head>
+<body onload="draw()">
+    <h2> Draw object using path function</h2>
+    <canvas id="can" width="300px" height="200px" style="border:3px red dashed";></canvas>
+    <canvas id="can2"></canvas>
+</body>
+
+</html>
